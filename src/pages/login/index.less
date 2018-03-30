@@ -1,0 +1,47 @@
+@import "../../styles/common";
+@import "../../styles/variable";
+.page{
+  padding: 0 10px;
+  .content{
+    padding-top: 30px;
+    .panel{
+      .br(2px);
+      background-color: @backC;
+      margin-bottom: 10px;
+      .left{
+        width: 100px;
+        .title{
+          .ellipsis(100%);
+          padding-left: 10px;
+        }
+      }
+      .right{
+        flex: 1;
+        position: relative;
+        input{
+          padding: 0 10px;
+          border: none;
+          background-color: transparent;
+          width: 100%;
+          line-height: normal;
+          &:focus{
+            & +.iconfont{
+              visibility: visible;
+            }
+          }
+        }
+        .iconfont{
+          visibility: hidden;
+          position: absolute;
+          right: 6px;
+          top: 0;
+          font-size: 16px;
+          color: #c7c7c7;
+        }
+      }
+    }
+  }
+  .foot{
+    padding-top: 30px;
+  }
+}

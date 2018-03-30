@@ -1,0 +1,62 @@
+@import "../../styles/common";
+@import "../../styles/variable";
+
+.page{
+  background-color: @backC;
+  height: 100%;
+  .head{
+    background-color: #fff;
+    text-align: center;
+    .icon{
+      padding: 35px 0 15px;
+      .iconfont{
+        font-size: 55px;
+      }
+    }
+    .price{
+      margin-bottom: 10px;
+      .fz(72px);
+    }
+    .tip{
+      .f17;
+      margin-bottom: 10px;
+    }
+    .text{
+      padding-bottom: 20px;
+    }
+    &.fail{
+      .iconfont{
+        color: #F76260;
+      }
+      .text{
+        color: #F76260;
+      }
+    }
+    &.success{
+      .iconfont{
+        color: @wxC;
+      }
+      .text{
+      }
+    }
+  }
+  .content{
+    padding-left: 10px;
+    background-color: #fff;
+    .panel{
+      .text-panel;
+      .left{
+        color: @grayC;
+      }
+    }
+  }
+  .foot{
+    background-color: #fff;
+    padding: 10px;
+    .btn{
+      color: #FF9858;
+      border: 1px solid #FF9858; /*px*/
+      line-height: 40px;
+    }
+  }
+}

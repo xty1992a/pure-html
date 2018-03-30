@@ -1,0 +1,55 @@
+@import "../../styles/common";
+@import "../../styles/variable";
+
+body{
+}
+.page{
+  background-color: @backC;
+  min-height: 100%;
+  .content{
+    padding-bottom: 120px;
+    .device-list{
+      padding: 10px;
+      .device-card{
+        margin-bottom: 10px;
+        .br(2px);
+        height: 90px;
+        box-shadow: 2px 0 8px rgba(0,0,0,.04);
+        background-color: #fff;
+        padding: 20px 14px;
+        .card-item{
+          display: flex;
+          align-items: center;
+          margin-bottom: 14px;
+          .left{
+            width: 250px;
+          }
+          .right{
+            width: 77px;
+            text-align: right;
+          }
+        }
+        .top{
+          .left{
+            width: 200px;
+            .f16;
+          }
+          .right{
+            width: 127px;
+            .price{
+              .ellipsis;
+              .f17;
+            }
+          }
+        }
+        .bottom{
+          color: @grayC;
+          .f14;
+          .business-name{
+            .two-line;
+          }
+        }
+      }
+    }
+  }
+}

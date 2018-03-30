@@ -1,0 +1,89 @@
+@import "../../styles/common";
+@import "../../styles/variable";
+
+.page{
+  background-color: @backC;
+  position: relative;
+  min-height: 100%;
+  .head{
+    overflow: hidden;
+    height: 116px;
+    padding: 15px 10px 0;
+    .deposit{
+      height: 90px;
+      .br(2px);
+      .shadow(8px, .04, 2px);
+      text-align: center;
+      background-color: #fff;
+      padding-top: 20px;
+      .text{
+        .f14;
+        padding-bottom: 10px;
+      }
+      .price{
+        color: @baseC;
+        .fz(72px);
+      }
+    }
+  }
+  .content{
+    padding-bottom: 120px;
+    min-height: 100%;
+    .main{
+      background-color: #fff;
+      padding-top: 15px;
+      .panel-block{
+        padding-bottom: 5px;
+        padding-left: 10px;
+        .panel-title{
+          height: 30px;
+          display: flex;
+          align-items: center;
+          .icon{
+            height: 15px;
+            width: 15px;
+            margin-right: 10px;
+          }
+          .title-text{
+            .f14;
+            color: @grayC;
+          }
+        }
+        .panel{
+          .text-panel;
+        }
+        .desc-text{
+          line-height: 1.6;
+          padding-right: 10px;
+          margin-bottom: 10px;
+          &:last-of-type{
+            padding-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+  .foot{
+  }
+}
+
+.fringe{
+  position: relative;
+  @over: 5%;
+  &:before{
+    transform: translateX(-@over);
+    z-index:0;
+    content: '';
+    width: 100% + 2 * @over;
+    height: 90px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: ~'0 0 50% 50% / 0 0 100% 100%';
+    background: linear-gradient(to right, #FFB258, #FF8F58);
+  }
+  > div{
+    position: relative;
+    z-index: 1;
+  }
+}

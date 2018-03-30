@@ -1,0 +1,16 @@
+html{
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+ul, ol, li{
+  list-style: none;
+}
